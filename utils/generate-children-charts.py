@@ -76,6 +76,32 @@ for parent in parameters:
                 }
                 }
             child_schema["properties"]["resources"]["properties"]["limits"]["properties"]["nvidia.com/gpu"] = gpu_limits
+
+            gpu_cores = {
+                "description": "Percentage of GPU compute power to allocate.",
+                "type": "string",
+                "default": "100",
+                "render": "slider",
+                "sliderMin": 1,
+                "sliderMax": 100,
+                "sliderStep": 1,
+                "sliderUnit": "%"
+                }
+            child_schema["properties"]["resources"]["properties"]["limits"]["properties"]["nvidia.com/gpucores"] = gpu_cores
+
+            gpu_mem_percentage = {
+                "description": "Percentage of GPU memory to allocate.",
+                "type": "string",
+                "default": "100",
+                "render": "slider",
+                "sliderMin": 1,
+                "sliderMax": 100,
+                "sliderStep": 1,
+                "sliderUnit": "%"
+                }
+            child_schema["properties"]["resources"]["properties"]["limits"]["properties"]["nvidia.com/gpumem-percentage"] = gpu_mem_percentage
+
+
             xonyxia = {
                 "overwriteSchemaWith": "ide/resources-gpu.json"
             }
