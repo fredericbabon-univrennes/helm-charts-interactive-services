@@ -164,6 +164,26 @@
                 "overwriteDefaultWith": "region.resources.gpu",
                 "useRegionSliderConfig": "gpu"
               }
+            },
+            "nvidia.com/gpucores": {
+              "description": "Percentage of GPU compute power to allocate.",
+              "type": "string",
+              "default": "100",
+              "render": "slider",
+              "sliderMin": 1,
+              "sliderMax": 100,
+              "sliderStep": 1,
+              "sliderUnit": "%"
+            },
+            "nvidia.com/gpumem-percentage": {
+              "description": "Percentage of GPU memory to allocate.",
+              "type": "string",
+              "default": "100",
+              "render": "slider",
+              "sliderMin": 1,
+              "sliderMax": 100,
+              "sliderStep": 1,
+              "sliderUnit": "%"
             }
           }
         }
