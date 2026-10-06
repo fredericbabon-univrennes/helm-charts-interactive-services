@@ -7,7 +7,8 @@
       "description": "Volumes Kubernetes suppl\u00e9mentaires",
       "default": [],
       "items": {
-        "type": "object"
+        "type": "object",
+        "additionalProperties": true
       }
     },
     "extraVolumeMounts": {
@@ -15,7 +16,8 @@
       "description": "Points de montage des volumes suppl\u00e9mentaires",
       "default": [],
       "items": {
-        "type": "object"
+        "type": "object",
+        "additionalProperties": true
       }
     },
     "service": {
