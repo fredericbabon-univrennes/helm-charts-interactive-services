@@ -104,6 +104,9 @@ spec:
           secret:
             secretName: {{ printf "%s-secretopencode" (include "library-chart.fullname" .) }}
         {{- end }}
+        {{- if .Values.extraVolumes }}
+        {{- toYaml .Values.extraVolumes | nindent 8 }}
+        {{- end }}
       {{- with .Values.imagePullSecrets }}
       imagePullSecrets:
         {{- toYaml . | nindent 8 }}
@@ -314,6 +317,9 @@ spec:
             - name: config-files
               mountPath: {{ .Values.certificates.pathToCaBundle }}
               subPath: cacerts
+            {{- end }}
+            {{- if .Values.extraVolumeMounts }}
+            {{- toYaml .Values.extraVolumeMounts | nindent 12 }}
             {{- end }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
