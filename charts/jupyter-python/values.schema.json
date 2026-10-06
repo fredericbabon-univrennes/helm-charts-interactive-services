@@ -2,6 +2,16 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "type": "object",
   "properties": {
+    "extraVolumes": {
+      "type": "array",
+      "description": "Volumes Kubernetes supplémentaires",
+      "default": []
+    },
+    "extraVolumeMounts": {
+      "type": "array",
+      "description": "Points de montage des volumes supplémentaires",
+      "default": []
+    },
     "service": {
       "title": "Service",
       "type": "object",

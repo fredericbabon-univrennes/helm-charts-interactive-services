@@ -266,3 +266,6 @@ message:
   en: ""
 
 runtimeClassName: ""
+
+extraVolumes: []
+extraVolumeMounts: []
