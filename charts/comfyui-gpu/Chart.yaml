@@ -1,0 +1,17 @@
+apiVersion: v2
+name: comfyui-gpu
+description: ComfyUI is a visual programming environment for creating and executing
+  machine learning workflows, with GPU support.
+icon: https://avatars.githubusercontent.com/u/166579949?s=180
+keywords:
+- comfyui
+home: https://github.com/comfyui/comfyui
+sources:
+- https://github.com/fredericbabon-univrennes/images-datascience
+- https://github.com/fredericbabon-univrennes/helm-charts-interactive-services
+type: application
+version: 0.1.2
+dependencies:
+- name: library-chart
+  version: 2.0.1
+  repository: https://inseefrlab.github.io/helm-charts-interactive-services
