@@ -1,1 +1,1 @@
-{{- template "library-chart.notes" (dict "serviceName" "Marimo (Python)" "context" $) -}}
+{{- template "library-chart.notes" (dict "serviceName" "comfyui" "context" $) -}}
