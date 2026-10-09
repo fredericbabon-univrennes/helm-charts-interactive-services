@@ -1,5 +1,27 @@
 apiVersion: v1
 entries:
+  comfyui:
+  - apiVersion: v2
+    created: "2026-10-09T15:18:50.373116021Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-interactive-services
+      version: 2.0.1
+    description: ComfyUI is a visual programming environment for creating and executing
+      machine learning workflows.
+    digest: 5add718bf41a073d9524dd1b306b0eff236495e6f810a7862d9b15c09f71fa62
+    home: https://github.com/comfyui/comfyui
+    icon: https://avatars.githubusercontent.com/u/166579949?s=180
+    keywords:
+    - comfyui
+    name: comfyui
+    sources:
+    - https://github.com/fredericbabon-univrennes/images-datascience
+    - https://github.com/fredericbabon-univrennes/helm-charts-interactive-services
+    type: application
+    urls:
+    - https://github.com/fredericbabon-univrennes/helm-charts-interactive-services/releases/download/comfyui-0.1.0/comfyui-0.1.0.tgz
+    version: 0.1.0
   jupyter-pyspark:
   - apiVersion: v2
     created: "2026-09-22T07:40:47.036653624Z"
@@ -56716,4 +56738,4 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-interactive-services/releases/download/vscode-tensorflow-gpu-1.8.6/vscode-tensorflow-gpu-1.8.6.tgz
     version: 1.8.6
-generated: "2026-10-06T13:41:04.885587406Z"
+generated: "2026-10-09T15:18:50.376366933Z"
