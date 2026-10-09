@@ -264,3 +264,5 @@ certificates: {}
 message:
   fr: ""
   en: ""
+extraVolumes: []
+extraVolumeMounts: []
