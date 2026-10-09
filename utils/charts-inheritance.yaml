@@ -43,3 +43,7 @@ vscode-python:
       - inseefrlab/onyxia-vscode-r-python-julia:r4.6.0-py3.13.13
 
 vscode-pyspark: []
+
+comfyui:
+  comfyui-gpu:
+    description: ComfyUI is a visual programming environment for creating and executing machine learning workflows, with GPU support.
