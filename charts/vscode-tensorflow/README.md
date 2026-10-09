@@ -1,27 +1,31 @@
-# comfyui
+# vscode-tensorflow
 
-![Version: 0.1.2](https://img.shields.io/badge/Version-0.1.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 2.6.5](https://img.shields.io/badge/Version-2.6.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
-ComfyUI is a visual programming environment for creating and executing machine learning workflows.
+The VSCode IDE with Python and the deep-learning framework TensorFlow.
 
-**Homepage:** <https://github.com/comfyui/comfyui>
+**Homepage:** <https://code.visualstudio.com/>
 
 ## Source Code
 
-* <https://github.com/fredericbabon-univrennes/images-datascience>
-* <https://github.com/fredericbabon-univrennes/helm-charts-interactive-services>
+* <https://github.com/InseeFrLab/images-datascience>
+* <https://github.com/InseeFrLab/helm-charts-interactive-services>
 
 ## Requirements
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://inseefrlab.github.io/helm-charts-interactive-services | library-chart | 2.0.1 |
+| https://inseefrlab.github.io/helm-charts-interactive-services | library-chart | 2.1.9 |
 
 ## Values
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
 | affinity | object | `{}` |  |
+| ai.enabled | bool | `false` |  |
+| ai.providers | list | `[]` |  |
+| ai.secretName | string | `""` |  |
+| ai.selectedModel | string | `""` |  |
 | autoscaling.enabled | bool | `false` |  |
 | autoscaling.maxReplicas | int | `100` |  |
 | autoscaling.minReplicas | int | `1` |  |
@@ -38,8 +42,6 @@ ComfyUI is a visual programming environment for creating and executing machine l
 | environment.group | string | `"users"` |  |
 | environment.user | string | `"onyxia"` |  |
 | extraEnvVars | list | `[]` |  |
-| extraVolumeMounts | list | `[]` |  |
-| extraVolumes | list | `[]` |  |
 | fullnameOverride | string | `""` |  |
 | git.asCodeServerRoot | bool | `false` |  |
 | git.branch | string | `""` |  |
@@ -77,7 +79,7 @@ ComfyUI is a visual programming environment for creating and executing machine l
 | mlflow.secretName | string | `""` |  |
 | nameOverride | string | `""` |  |
 | networking.clusterIP | string | `"None"` |  |
-| networking.service.port | int | `8188` |  |
+| networking.service.port | int | `8080` |  |
 | networking.type | string | `"ClusterIP"` |  |
 | networking.user.enabled | bool | `false` |  |
 | networking.user.port | int | `5000` |  |
@@ -106,6 +108,7 @@ ComfyUI is a visual programming environment for creating and executing machine l
 | route.tls.termination | string | `"edge"` |  |
 | route.userHostname | string | `"chart-example-user.local"` |  |
 | route.wildcardPolicy | string | `"None"` |  |
+| runtimeClassName | string | `""` |  |
 | s3.accessKeyId | string | `""` |  |
 | s3.defaultRegion | string | `""` |  |
 | s3.enabled | bool | `false` |  |
@@ -122,13 +125,11 @@ ComfyUI is a visual programming environment for creating and executing machine l
 | security.password | string | `"changeme"` |  |
 | securityContext | object | `{}` |  |
 | service.image.custom.enabled | bool | `false` |  |
-| service.image.custom.version | string | `"comfyui:latest"` |  |
+| service.image.custom.version | string | `"inseefrlab/onyxia-vscode-tensorflow:py3.13.15"` |  |
 | service.image.pullPolicy | string | `"IfNotPresent"` |  |
-| service.image.version | string | `"comfyui:latest"` |  |
+| service.image.version | string | `"inseefrlab/onyxia-vscode-tensorflow:py3.13.15"` |  |
 | service.initContainer.image | string | `"inseefrlab/onyxia-base:latest"` |  |
 | service.initContainer.pullPolicy | string | `"IfNotPresent"` |  |
-| service.initContainer.resources.limits.cpu | string | `"50m"` |  |
-| service.initContainer.resources.limits.memory | string | `"50Mi"` |  |
 | serviceAccount.annotations | object | `{}` |  |
 | serviceAccount.create | bool | `true` |  |
 | serviceAccount.name | string | `""` |  |
