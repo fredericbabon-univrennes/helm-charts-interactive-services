@@ -122,9 +122,9 @@ ComfyUI is a visual programming environment for creating and executing machine l
 | security.password | string | `"changeme"` |  |
 | securityContext | object | `{}` |  |
 | service.image.custom.enabled | bool | `false` |  |
-| service.image.custom.version | string | `"comfyui:latest"` |  |
+| service.image.custom.version | string | `"gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01"` |  |
 | service.image.pullPolicy | string | `"IfNotPresent"` |  |
-| service.image.version | string | `"comfyui:latest"` |  |
+| service.image.version | string | `"gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01"` |  |
 | service.initContainer.image | string | `"inseefrlab/onyxia-base:latest"` |  |
 | service.initContainer.pullPolicy | string | `"IfNotPresent"` |  |
 | service.initContainer.resources.limits.cpu | string | `"50m"` |  |

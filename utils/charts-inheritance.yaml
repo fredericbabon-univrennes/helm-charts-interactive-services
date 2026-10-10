@@ -48,4 +48,4 @@ comfyui:
   comfyui-gpu:
     description: ComfyUI is a visual programming environment for creating and executing machine learning workflows, with GPU support.
     images:
-      - comfyui:latest
+      - gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01
