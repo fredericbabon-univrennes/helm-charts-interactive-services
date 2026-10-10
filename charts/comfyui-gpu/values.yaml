@@ -9,11 +9,11 @@ service:
         cpu: 50m
         memory: 50Mi
   image:
-    version: comfyui:latest
+    version: gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01
     pullPolicy: IfNotPresent
     custom:
       enabled: false
-      version: comfyui:latest
+      version: gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01
 security:
   password: changeme
   networkPolicy:

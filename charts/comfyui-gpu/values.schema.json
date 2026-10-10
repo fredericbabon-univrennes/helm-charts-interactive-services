@@ -41,9 +41,9 @@
             "version": {
               "title": "Name of the service's Docker image",
               "type": "string",
-              "default": "comfyui:latest",
+              "default": "gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01",
               "listEnum": [
-                "comfyui:latest"
+                "gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01"
               ],
               "render": "list",
               "hidden": {
@@ -66,7 +66,7 @@
                 "version": {
                   "title": "Name of the custom image",
                   "type": "string",
-                  "default": "comfyui:latest",
+                  "default": "gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v01",
                   "hidden": {
                     "value": false,
                     "path": "enabled",
