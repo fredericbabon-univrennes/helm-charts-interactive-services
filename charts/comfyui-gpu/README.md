@@ -1,8 +1,8 @@
-# comfyui
+# comfyui-gpu
 
 ![Version: 0.1.3](https://img.shields.io/badge/Version-0.1.3-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
-ComfyUI is a visual programming environment for creating and executing machine learning workflows.
+ComfyUI is a visual programming environment for creating and executing machine learning workflows, with GPU support.
 
 **Homepage:** <https://github.com/comfyui/comfyui>
 
