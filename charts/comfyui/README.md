@@ -1,6 +1,6 @@
 # comfyui
 
-![Version: 0.1.5](https://img.shields.io/badge/Version-0.1.5-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
+![Version: 0.1.6](https://img.shields.io/badge/Version-0.1.6-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square)
 
 ComfyUI is a visual programming environment for creating and executing machine learning workflows.
 
@@ -122,9 +122,9 @@ ComfyUI is a visual programming environment for creating and executing machine l
 | security.password | string | `"changeme"` |  |
 | securityContext | object | `{}` |  |
 | service.image.custom.enabled | bool | `false` |  |
-| service.image.custom.version | string | `"gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v03"` |  |
+| service.image.custom.version | string | `"gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v04"` |  |
 | service.image.pullPolicy | string | `"IfNotPresent"` |  |
-| service.image.version | string | `"gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v03"` |  |
+| service.image.version | string | `"gitlab-ia-registry.univ-rennes.fr:443/frederic.babon/comfyui-docker/comfyui:v04"` |  |
 | service.initContainer.image | string | `"inseefrlab/onyxia-base:latest"` |  |
 | service.initContainer.pullPolicy | string | `"IfNotPresent"` |  |
 | service.initContainer.resources.limits.cpu | string | `"50m"` |  |
