@@ -2,6 +2,27 @@ apiVersion: v1
 entries:
   comfyui:
   - apiVersion: v2
+    created: "2026-10-12T13:36:11.249825861Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-interactive-services
+      version: 2.0.1
+    description: ComfyUI is a visual programming environment for creating and executing
+      machine learning workflows.
+    digest: 42565932f6c584ca7c056efa553457c5233ab7cddb8e6e2a5461f90311e038b5
+    home: https://github.com/comfyui/comfyui
+    icon: https://avatars.githubusercontent.com/u/166579949?s=180
+    keywords:
+    - comfyui
+    name: comfyui
+    sources:
+    - https://github.com/fredericbabon-univrennes/images-datascience
+    - https://github.com/fredericbabon-univrennes/helm-charts-interactive-services
+    type: application
+    urls:
+    - https://github.com/fredericbabon-univrennes/helm-charts-interactive-services/releases/download/comfyui-0.1.8/comfyui-0.1.8.tgz
+    version: 0.1.8
+  - apiVersion: v2
     created: "2026-10-12T09:48:58.745671776Z"
     dependencies:
     - name: library-chart
@@ -170,6 +191,27 @@ entries:
     - https://github.com/fredericbabon-univrennes/helm-charts-interactive-services/releases/download/comfyui-0.1.0/comfyui-0.1.0.tgz
     version: 0.1.0
   comfyui-gpu:
+  - apiVersion: v2
+    created: "2026-10-12T13:36:11.537232832Z"
+    dependencies:
+    - name: library-chart
+      repository: https://inseefrlab.github.io/helm-charts-interactive-services
+      version: 2.0.1
+    description: ComfyUI is a visual programming environment for creating and executing
+      machine learning workflows, with GPU support.
+    digest: d6b3508a1fd52d3d74b0a0f6ac0720b2cb49af15824f3a045a6079c415ff1cb8
+    home: https://github.com/comfyui/comfyui
+    icon: https://avatars.githubusercontent.com/u/166579949?s=180
+    keywords:
+    - comfyui
+    name: comfyui-gpu
+    sources:
+    - https://github.com/fredericbabon-univrennes/images-datascience
+    - https://github.com/fredericbabon-univrennes/helm-charts-interactive-services
+    type: application
+    urls:
+    - https://github.com/fredericbabon-univrennes/helm-charts-interactive-services/releases/download/comfyui-gpu-0.1.8/comfyui-gpu-0.1.8.tgz
+    version: 0.1.8
   - apiVersion: v2
     created: "2026-10-12T09:48:58.869444634Z"
     dependencies:
@@ -57012,4 +57054,4 @@ entries:
     urls:
     - https://github.com/InseeFrLab/helm-charts-interactive-services/releases/download/vscode-tensorflow-gpu-1.8.6/vscode-tensorflow-gpu-1.8.6.tgz
     version: 1.8.6
-generated: "2026-10-12T09:48:58.874309871Z"
+generated: "2026-10-12T13:36:11.540797809Z"
